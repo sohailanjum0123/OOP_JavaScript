@@ -1,19 +1,23 @@
 class BanckForm{
 fill(){
-    alert(this.name + "  Form is submitted")
+    alert(this.name + "  Form is submitted"+ this.formNumber)
 }
 cancel(){
-    alert(this.name + "  Form is cancelled")
+    alert(this.name + "  Form is cancelled"+ this.formNumber)
 }
-form(name){
-    return  this.name=name;
+form(name,formNumber){
+     this.name=name;
+     this.formNumber=formNumber
 }
 addition(a,b){
-return a+b;
+    this.a=a;
+    this.b=b;
+ let result =a + b;
+ return  result;
 }
 }
 let manager = new BanckForm()
-manager.form("Sohail")
+manager.form("Sohail", 12343)
 manager.fill();
 manager.cancel()
 const result  = manager.addition(3,4)
