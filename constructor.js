@@ -47,5 +47,6 @@ const depositAmount = document.querySelector("#DepositAmount");
 
 depositDetail.addEventListener('submit', (e)=>{
     e.preventDefault();
-    console.log(accountDetais.value, depositAmount.value);
+    const deposited   =  new BanckAcc(accountDetais.value, depositAmount.value)
+    console.log();
 })
